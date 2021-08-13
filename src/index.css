@@ -29,3 +29,8 @@ code {
   border-radius: 0px;
   box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
+
+.rs-play svg{
+  width: 25px;
+  height: 25px;
+}
