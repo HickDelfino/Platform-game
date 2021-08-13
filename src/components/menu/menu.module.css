@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     top: 0;
     left: 0;
     width: 100%;
@@ -7,17 +7,18 @@
     background: -moz-linear-gradient(left, #0B1A42 0%, #152E7A 51%, #0B1A42 100%);
     background: -webkit-linear-gradient(left, #0B1A42 0%, #152E7A 51%, #0B1A42 100%);
     background: linear-gradient(to right, #0B1A42 0%, #152E7A 51%, #0B1A42 100%);
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.62); 
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.62);
-    display:flex;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.62);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.62);
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: fixed;
+    box-sizing: border-box;
+    padding: 0px 15px 0 15px;
 }
 
-.navlink{
+.navlink {
     width: 40%;
-    background-color: #0e205294;
     border-radius: 35px;
     padding: 5px;
     display: flex;
@@ -25,7 +26,7 @@
     justify-content: space-between;
 }
 
-.menulink{
+.menulink {
     color: #f4f4f4;
     border: solid 1px #0B1A42;
     background: #0B1A42;
@@ -37,18 +38,16 @@
     font-size: 16px;
     transition: all 0.2s;
 }
-.menulink:hover{
+
+.menulink:hover {
     color: white;
     color: #FFFFFF;
     background: #0B1A42;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF;
     transform: scale(1.02);
 }
-.navlogo{
-    margin-left: 100px;
-}
 
-.searchBar{
+.searchBar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,7 +58,7 @@
     border-radius: 3px;
 }
 
-.searchBar input{
+.searchBar input {
     background-color: transparent;
     padding: 15px;
     border: none;
@@ -68,8 +67,13 @@
     color: white;
 }
 
-.searchBarIcon{
+.searchBarIcon {
     margin: 5px;
     cursor: pointer;
     color: #f7f7f7;
+    transition: all .3s;
+}
+
+.searchBarIcon:active {
+    transform: scale(1.2);
 }

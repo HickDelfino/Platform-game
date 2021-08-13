@@ -1,20 +1,19 @@
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import styles from "./app.module.css";
-/*Teste*/ 
+/*Teste*/
 import Menu from "./components/menu/menu";
-import CardMain from './components/cardmain/cardmain';
-import Page1 from './pages/page1/page1.js';
-import Page2 from './pages/page2/page2';
+import Home from './pages/home/home.js';
+import Promos from './pages/promos/promos.js';
 
 function App() {
   return (
     <div className={styles.Apps}>
-      <Menu />
       <Router>
+        <Menu />
         <Switch>
-          <Route path="/" exact component={Page1}/>
-          <Route path="/page2" exact component={Page2}/>
+          <Route path="/" exact component={Home} />
+          <Route path="/promo" exact component={Promos} />
         </Switch>
       </Router>
     </div>
