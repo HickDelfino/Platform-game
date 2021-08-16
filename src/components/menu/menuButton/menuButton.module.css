@@ -26,12 +26,24 @@ span.ripple {
     outline: 0;
     border: 0;
     border-radius: 3px;
-    /* box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); */
     cursor: pointer;
     white-space: nowrap;
     margin: 5px;
+    width: 150px;
 }
 
 .button:hover{
     background-color: #0e2155;
+}
+
+@media (max-width: 1588px) {
+    .button{
+        width: 125px;
+    }
+}
+
+@media (max-width: 1375px) {
+    .button{
+        width: 100px;
+    }
 }

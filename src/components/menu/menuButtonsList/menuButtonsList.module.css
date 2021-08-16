@@ -1,0 +1,14 @@
+.navlink {
+    width          : 40%;
+    border-radius  : 35px;
+    padding        : 5px;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1130px) {
+    .navlink {
+        display: none;
+    }
+}

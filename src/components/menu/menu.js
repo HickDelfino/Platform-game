@@ -3,6 +3,7 @@ import MenuButton from "./menuButton/menuButton";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import Speech from 'react-speech';
 import { useState } from 'react';
+import MenuButtonsList from "./menuButtonsList/menuButtonsList";
 
 export default function Menu() {
 
@@ -23,11 +24,18 @@ export default function Menu() {
     return (
         <nav className={styles.navbar}>
             <img className={styles.navlogo} src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="190" />
+            
+            <div className={styles.mobileMenu}>
+                <button className={styles.mobileMenuIcon}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width={50} height={50} className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
             <div className={styles.searchBar}>
 
                 <input value={searchString} onChange={(event) => { setSearchString(event.target.value) }} placeHolder="digite sua pesquisa" />
-
-
 
                 <button className={styles.searchBarIcon}>
                     <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} className={'h-6 w-6'} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -51,12 +59,7 @@ export default function Menu() {
 
 
             </div>
-            <div className={styles.navlink}>
-                <MenuButton href="/promo">Promoção</MenuButton>
-                <MenuButton href="/">Categorias</MenuButton>
-                <MenuButton href="/">Noticias</MenuButton>
-                <MenuButton href="/">Sobre nós</MenuButton>
-            </div>
+            <MenuButtonsList/>
         </nav>
     )
 }

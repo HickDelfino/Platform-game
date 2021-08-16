@@ -17,34 +17,17 @@
     padding           : 0px 15px 0 15px;
 }
 
-.navlink {
-    width          : 40%;
-    border-radius  : 35px;
-    padding        : 5px;
-    display        : flex;
-    align-items    : center;
-    justify-content: space-between;
+.mobileMenu {
+    display: none;
 }
 
-.menulink {
-    color          : #f4f4f4;
-    border         : solid 1px #0B1A42;
-    background     : #0B1A42;
-    border-radius  : 8px;
-    display        : inline-flex;
-    justify-content: center;
-    width          : 100px;
-    padding        : 5px;
-    font-size      : 16px;
-    transition     : all 0.2s;
-}
-
-.menulink:hover {
-    color      : white;
-    color      : #FFFFFF;
-    background : #0B1A42;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF;
-    transform  : scale(1.02);
+.mobileMenuIcon {
+    outline         : none;
+    border          : none;
+    padding         : 0;
+    background-color: transparent;
+    color           : white;
+    margin-right    : 25px;
 }
 
 .searchBar {
@@ -120,5 +103,15 @@
 @keyframes pulse {
     to {
         box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    }
+}
+
+@media (max-width: 1130px) {
+    .navlogo {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: block;
     }
 }
