@@ -35,7 +35,7 @@ export default function Menu() {
         setIsRecording(false);
         SpeechRecognition.stopListening();
 
-        return setSearchString(transcript);
+        setSearchString(transcript);
     }
 
     async function search(){
@@ -64,6 +64,7 @@ export default function Menu() {
             </div>
 
             <div className={styles.searchBar}>
+
                 <input value={searchString} onChange={(event) => { setSearchString(event.target.value) }} placeHolder="digite sua pesquisa" />
 
                 <button className={styles.searchBarIcon} onClick={search}>
@@ -80,7 +81,6 @@ export default function Menu() {
                         </svg>
                     </button>
                 }
-
 
             </div>
 
