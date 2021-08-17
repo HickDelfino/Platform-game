@@ -1,5 +1,4 @@
 import { createContext, useState, useContext } from "react";
-import { ContextProvider } from "react-is";
 
 const ApplicationContext = createContext();
 

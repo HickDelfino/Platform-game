@@ -1,0 +1,13 @@
+.cardFooterButton{
+    text-transform  : none;
+    border-radius   : 3px;
+    color           : white;
+    background-color: #0B1A42;
+    width           : 50%;
+    margin          : 5px;
+    height          : 45px;
+}
+
+.cardFooterButton:hover {
+    background-color: #001c68;
+}

@@ -1,25 +1,29 @@
 import { Link } from 'react-router-dom';
+import { Button , makeStyles} from '@material-ui/core';
 import styles from './menuButton.module.css';
 
-export default function MenuButton({ href, children }) {
+const useStyles = makeStyles({
+    root: {
+        borderRadius: '2px',
+        backgroundColor: '#0044ff',
+        color: 'white',
+        textTransform: 'none',
+        margin: '0',
+        height: '45px',
+        whiteSpace: 'nowrap',
+        "&:hover": {
+            backgroundColor: 'white',
+            color: 'blue',
+            boxShadow: '0 0 120px white'
+        }
+    }
+})
 
+export default function MenuButton({ href, children }) {
+    const classes = useStyles();
     return (
-        <Link to={href}>
-            <button className={styles.button} onClick={(event) => {
-                const button = event.currentTarget;
-                const circle = document.createElement("span");
-                const diameter = Math.max(button.clientWidth, button.clientHeight);
-                const radius = diameter / 2;
-                circle.style.width = circle.style.height = `${diameter}px`;
-                circle.style.left = `${event.clientX - (button.offsetLeft + radius)}px`;
-                circle.style.top = `${event.clientY - (button.offsetTop + radius)}px`;
-                circle.classList.add(styles.ripple);
-                const ripple = button.getElementsByClassName(styles.ripple)[0];
-                if (ripple) {
-                    ripple.remove();
-                }
-                button.appendChild(circle);
-            }}>{children}</button>
+        <Link to={href} className={styles.linkStyle}>
+            <Button classes={classes}>{children}</Button>
         </Link>
     )
 }

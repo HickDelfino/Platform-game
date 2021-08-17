@@ -1,5 +1,4 @@
-.Apps{
-    height: 100vh;
+.app{
     background: #0B1A42;
     background: -moz-linear-gradient(top, #0B1A42 0%, #2D084B 100%);
     background: -webkit-linear-gradient(top, #0B1A42 0%, #2D084B 100%);

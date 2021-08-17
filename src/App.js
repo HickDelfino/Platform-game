@@ -8,7 +8,7 @@ import Promos from './pages/promos/promos.js';
 
 function App() {
   return (
-    <div className={styles.Apps}>
+    <div className={styles.app}>
       <Router>
         <Menu />
         <Switch>
