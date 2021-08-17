@@ -5,6 +5,7 @@ import styles from "./app.module.css";
 import Menu from "./components/menu/menu";
 import Home from './pages/home/home.js';
 import Promos from './pages/promos/promos.js';
+import Game from './pages/game/game';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/promo" exact component={Promos} />
-          <Route path="/game/:id" exact  />
+          <Route path="/game/:id" exact component={Game} />
         </Switch>
       </Router>
     </div>
