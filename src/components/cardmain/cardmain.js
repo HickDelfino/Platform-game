@@ -1,13 +1,13 @@
 import styles from "./cardmain.module.css";
 import CardButton from "./cardButton/cardButton";
 
-export default function CardMain({ img, title, description }) {
+export default function CardMain({ gameData }) {
     return (
         <div className={styles.cardContainer}>
-            <img src={img} className={styles.backgroundFormat} />
+            <img src={gameData.coverImage} className={styles.backgroundFormat} />
             <div className={styles.descriptionContainer}>
-                <h2>{title}</h2>
-                <p>{description}</p>
+                <h2>{gameData.gameTitle}</h2>
+                <p>{gameData.description}</p>
             </div>
             <div className={styles.cardFooterButtonsContainer}>
                 <CardButton> Ver mais </CardButton>

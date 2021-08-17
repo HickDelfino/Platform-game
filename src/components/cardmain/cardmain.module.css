@@ -56,6 +56,13 @@
     background: white;
 }
 
+.descriptionContainer h2 {
+    white-space  : nowrap;
+    overflow     : hidden;
+    width        : 300px;
+    text-overflow: ellipsis;
+}
+
 .cardFooterButtonsContainer {
     display        : flex;
     flex-direction : row;

@@ -4,7 +4,8 @@ const ApplicationContext = createContext();
 
 export default function ContextProvider({children}){
     const [contextCache, setContextCache] = useState({
-        searchString: ''
+        searchString: '',
+        gamesArray: []
     });
 
     return (
