@@ -1,0 +1,36 @@
+.pageContent {
+    width          : 100%;
+    display        : flex;
+    padding-top    : 50px;
+    align-items    : flex-start;
+    justify-content: space-evenly;
+}
+
+.gameData {
+    display       : flex;
+    flex-direction: column;
+    width         : 300px;
+    height        : 500px;
+    box-sizing    : border-box;
+    padding       : 15px;
+    background    : linear-gradient(to bottom, #1c3374 0%, #510f86 100%);
+    border-radius : 3px;
+}
+
+.gameDataCoverImage {
+    object-fit   : cover;
+    width        : 100%;
+    height       : 320px;
+    border-radius: 3px;
+    user-select  : none;
+}
+
+.gameDetailsAndReviews {
+    display      : flex;
+    flex-direction: column;
+    width        : 900px;
+    height       : 500px;
+    background   : linear-gradient(to bottom, #1c3374 0%, #510f86 100%);
+    padding      : 15px;
+    border-radius: 3px;
+}
