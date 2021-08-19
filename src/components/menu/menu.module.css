@@ -15,7 +15,7 @@
     position          : fixed;
     box-sizing        : border-box;
     padding           : 0px 15px 0 15px;
-    z-index           : 1;
+    z-index           : 10;
 }
 
 .mobileMenu {

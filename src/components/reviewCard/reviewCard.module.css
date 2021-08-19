@@ -1,0 +1,23 @@
+.reviewContainer {
+    display         : flex;
+    flex-direction  : column;
+    background-color: rgba(255, 255, 255, .3);
+    box-sizing      : border-box;
+    padding         : 15px;
+    border-radius   : 3px;
+    user-select     : none;
+    margin-bottom   : 15px;
+}
+
+.reviewAuthor {
+    margin: 0;
+}
+
+.reviewAvaliation {
+    margin-top : 0;
+    padding-top: 0;
+}
+
+.reviewDescription p {
+    margin-top: 0;
+}
